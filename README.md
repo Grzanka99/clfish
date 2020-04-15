@@ -33,7 +33,7 @@ $ omf theme wanna
 
 ## Screenshot
 
-Will be added in future
+<img src="preview.png" width="722px" height="458px" align="left">
 
 # License
 
