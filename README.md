@@ -21,7 +21,8 @@ $ git clone https://github.com/Grzanka99/wanna-fish-theme.git ~/.local/share/omf
 ## Install
 
 ```sh
-$ omf reload && omf install wanna
+$ omf reload
+$ omf theme wanna
 ```
 
 ## Features
