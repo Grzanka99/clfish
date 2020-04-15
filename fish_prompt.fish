@@ -30,7 +30,6 @@ function _git_ahead
 
     set -l behind (count (for arg in $commits; echo $arg; end | grep '^<'))
     set -l ahead (count (for arg in $commits; echo $arg; end | grep -v '^<'))
-    echo -sn ' '
     switch "$ahead $behind"
         case ''
             printf ''
@@ -50,9 +49,9 @@ function _is_git_dirty
 end
 
 function _status_color
-    set -l ec $status # set exit code
+    set -l exit_code $status
 
-    if test $ec -ne 0
+    if test $exit_code -ne 0
         echo -sn $red
     else
         echo -sn $green
@@ -61,6 +60,7 @@ function _status_color
 end
 
 function fish_prompt
+    set -l lc (_status_color) # last color
     set -l cwd (prompt_pwd)
 
     echo -sn $cyan (whoami) (_get_host)
@@ -77,5 +77,7 @@ function fish_prompt
     # uncomment next line to 2-line layout
     #echo ''
 
-    echo -sn $normal ' >'$myc1'>'(_status_color)'> ' $normal
+
+
+    echo -sn $normal ' >'$myc1'>'$lc'> ' $normal
 end
