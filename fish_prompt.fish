@@ -36,11 +36,11 @@ function _git_ahead
         case '0 0'
             printf ''
         case '* 0'
-            echo -sn $yellow '↑'
+            echo -sn $yellow ' ↑'
         case '0 *'
-            echo -sn $blue '↓'
+            echo -sn $blue ' ↓'
         case '*'
-            echo -sn $yellow '↑' $blue '↓'
+            echo -sn $yellow ' ↑' $blue '↓'
     end
 end
 
