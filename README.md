@@ -14,9 +14,7 @@
 ### Download
 
 ```sh
-$ # Download for ssh
-$ git clone git@github.com:Grzanka99/wanna-fish-theme.git ~/.local/share/omf/themes/wanna
-$ # Download for https
+$ omf dir: ~/.local/share/omf
 $ git clone https://github.com/Grzanka99/wanna-fish-theme.git ~/.local/share/omf/themes/wanna
 $ # Enabling
 $ omf reload
@@ -25,20 +23,20 @@ $ omf theme wanna
 
 ## With clear fish
 
-If you want to install this theme in clear fish, you just have to copy this files:
+If you want to install this theme in clear fish, you have to close this repository into functions directory inside fish config directory.
+e.g.:
+
+```
+$ # config dir: ~/.config/fish/
+$ git clone https://github.com/Grzanka99/wanna-fish-theme.git ~/.config/fish/functions
+```
+
+If you have any other files inside `functions` directory, you have to move this files manualy:
 
 ```
 fish_prompt.fish
-fish_right_prompt.fish
+fist_right_prompt.fish
 ```
-
-Into your config directory
-
-```
-eg. ~/.config/fish/functions/
-```
-
-I Will bring easier install way in the future.
 
 ## Features
 
