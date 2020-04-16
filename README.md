@@ -14,7 +14,7 @@
 ### Download
 
 ```sh
-$ omf dir: ~/.local/share/omf
+$ # omf dir: ~/.local/share/omf
 $ git clone https://github.com/Grzanka99/wanna-fish-theme.git ~/.local/share/omf/themes/wanna
 $ # Enabling
 $ omf reload
