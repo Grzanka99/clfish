@@ -2,27 +2,40 @@
 
 #### Wanna fish theme
 
-> A theme for [Oh My Fish][omf-link].
+> A theme for [Oh My Fish][omf-link]
 > by Cezary Grzanka
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v3.0.0-007EC7.svg?style=flat-square)](https://fishshell.com)
 [![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
-## Download
+## With Oh-My-Fish
+
+### Download
 
 ```sh
-$ # for ssh
-$ git clone git@github.com:Grzanka99/wanna-fish-theme.git ~/.local/share/omf/themes/wanna
-$ for https
+$ # omf dir: ~/.local/share/omf
 $ git clone https://github.com/Grzanka99/wanna-fish-theme.git ~/.local/share/omf/themes/wanna
-```
-
-## Install
-
-```sh
+$ # Enabling
 $ omf reload
 $ omf theme wanna
+```
+
+## With clear fish
+
+If you want to install this theme in clear fish, you have to close this repository into functions directory inside fish config directory.
+e.g.:
+
+```
+$ # config dir: ~/.config/fish/
+$ git clone https://github.com/Grzanka99/wanna-fish-theme.git ~/.config/fish/functions
+```
+
+If you have any other files inside `functions` directory, you have to move this files manualy:
+
+```
+fish_prompt.fish
+fist_right_prompt.fish
 ```
 
 ## Features
