@@ -12,14 +12,14 @@ set -g normal (set_color normal)
 set -g purple (set_color -o purple)
 set -g myc1 (set_color -o ABCDEF)
 
-function _get_host
-    set -l hn (hostname -s)
-    if [ $hn = 'localhost' ]
-        return
-    else
-        echo "@"$hn
-    end
-end
+# function _get_host
+#     set -l hn (hostname -s)
+#     if [ $hn = 'localhost' ]
+#         return
+#     else
+#         echo "@"$hn
+#     end
+# end
 
 function _git_ahead
     set -l commits (command git rev-list --left-right '@{upstream}...HEAD' 2> /dev/null)
@@ -63,7 +63,7 @@ function fish_prompt
     set -l lc (_status_color) # last color
     set -l cwd (prompt_pwd)
 
-    echo -sn $cyan (whoami) (_get_host)
+    echo -sn $cyan (whoami)
     echo -sn $blue ' > ' $cwd
 
     if [ (_is_git_dirty) ]
