@@ -8,6 +8,6 @@ function fish_right_prompt
         set_color -o green
     end
     set_color ABCDEF
-    printf ' (%s) ' (date +%H:%M:%S)
+    printf ' (%s)' (date +%H:%M:%S)
     set_color normal
 end
