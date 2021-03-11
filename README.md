@@ -46,7 +46,7 @@ fist_right_prompt.fish
 
 ## Screenshot
 
-<img src="preview.png" width="722px" height="458px">
+<img src="preview.png" width="903px" height="215px">
 
 # License
 
